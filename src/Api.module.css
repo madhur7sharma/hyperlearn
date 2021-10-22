@@ -1,0 +1,241 @@
+.displayDiv{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.mainDiv{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 22% 50% 28%;
+    grid-template-areas: 
+    'left middle right';
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 4px 10px #ccc
+}
+
+
+.inp{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 35%;
+    height: 38px;
+    border-radius: 22px;
+    border: 0.2px solid rgb(204, 204, 204);
+    outline: none;
+    padding-left: 24px;
+    font-size: 18px;
+}
+.inp:focus{
+    box-shadow: 0 4px 10px #ccc;
+}
+.inp:hover{
+    box-shadow: 0 4px 10px #ccc;
+}
+
+
+.leftSubDiv{
+    /* background-color: aqua; */
+    text-align: center;
+    /* height: 100vh; */
+    grid-area: left;
+}
+.imgDiv{
+    margin-top: 36px;
+}
+.profileImage{
+    width: 180px;
+    border-radius: 90px;
+}
+
+
+
+.skills{
+    font-size: 12px;
+    background-color: rgb(230, 230, 230);
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+.companyLogo{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+
+
+
+
+.detailDiv{
+    /* background-color: aquamarine;
+    height: 100vh; */
+    margin-bottom: 36px;
+    grid-area: middle;
+}
+.ExpLang{
+    display: flex;
+    line-height: 8px;
+}
+.detailAdjust{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.slots{
+    padding: 8px;
+    width: 80%;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 4px 10px #ccc
+}
+.bookSlot{
+    display: flex;
+    align-items: center;
+}
+.bookButton{
+    height: 35px;
+    width: 70px;
+    color: #8c52ff;
+    background-color: white;
+    border: 1px solid #8c52ff;
+    cursor: pointer;
+}
+.bookButton:active{
+    background-color: thistle;
+}
+.bookNowButton{
+    width: 90%;
+    height: 35px;
+    color: #ffffff;
+    background-color: #8c52ff;
+    border: 1px solid #8c52ff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.bookNowButton:active{
+    background-color: #d8c4ff;
+}
+
+
+
+
+
+
+
+.bookingDiv{
+    /* background-color: cadetblue; */
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 100vh; */
+    grid-area: right;
+}
+
+
+.loadDiv{
+    margin-top: 100px;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+
+
+@media(max-width : 1200px){
+    .mainDiv{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16px;
+        width: 96%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-row-gap: 12px;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-template-areas: 
+        'left middle'
+        'right right';
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: 0 4px 10px #ccc
+    }
+    .bookingDiv{
+        width: 50%;
+        margin-bottom: 24px;
+    }
+    .bookNowButton{
+        width: 100%;
+    }
+    .slots{
+        padding: 8px;
+        width: 100%;
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: 0 4px 10px #ccc
+    }
+    .ExpLang{
+        justify-content: center;
+    }
+    .inp{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: 50%;
+        height: 38px;
+        border-radius: 22px;
+        border: 0.2px solid rgb(204, 204, 204);
+        outline: none;
+        padding-left: 24px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media(max-width : 800px){
+    .mainDiv{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 75%;
+        grid-row-gap: 12px;
+        justify-content: space-evenly;
+        grid-template-areas: 
+        'left'
+        'middle'
+        'right';
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: 0 4px 10px #ccc;
+    }
+    .bookingDiv{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .bookNowButton{
+        width: 100%;
+        height: 35px;
+        color: #ffffff;
+        background-color: #8c52ff;
+        border: 1px solid #8c52ff;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .inp{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: 70%;
+        height: 38px;
+        border-radius: 22px;
+        border: 0.2px solid rgb(204, 204, 204);
+        outline: none;
+        padding-left: 24px;
+        font-size: 18px;
+    }
+}
+

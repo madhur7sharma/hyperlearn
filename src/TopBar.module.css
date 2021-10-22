@@ -1,0 +1,54 @@
+.topBar{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgb(204, 204, 204);
+    border-radius: 0 0 12px 12px;
+}
+
+.menuItem{
+    margin: 16px;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.butt{
+    margin-left: 12px;
+    background-color: #dfcfff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.butt:hover{
+    background-color: #8c52ff;
+    color: white;
+}
+.butt:active{
+    color: blueviolet;
+}
+
+.topBarDiv{
+    transform: translateY(70%);
+}
+
+@media(max-width : 550px){
+    .menuItem{
+        margin: 13px;
+        font-size: 18px;
+        font-weight: 300;
+        cursor: pointer;
+        font-family: monospace;
+    }
+    
+    .butt{
+        margin-left: 9px;
+        background-color: #dfcfff;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+    }
+}
